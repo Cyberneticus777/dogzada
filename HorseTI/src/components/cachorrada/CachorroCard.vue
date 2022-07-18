@@ -1,7 +1,7 @@
 <script>
 export default {
-    props: ['cachorro']
-}
+  props: ["cachorro"],
+};
 </script>
 
 <template>
@@ -10,7 +10,7 @@ export default {
       src="@/assets/img/guia_racas_golden_retriever_dogvibe.jpg"
       alt="gato"
     />
-    <h1>{{ cachorro.nome }}</h1>
+    <h1>{{ cachorro.descricao }}</h1>
     <span
       >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam
       ex dolor reiciendis iusto expedita ipsum maxime doloremque.

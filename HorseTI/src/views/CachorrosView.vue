@@ -1,27 +1,27 @@
 <script>
-import CachorroCard from '@/components/cachorrada/CachorroCard.vue'
-
+import CachorroCard from "@/components/cachorrada/CachorroCard.vue";
+import axios from "axios";
 export default {
   components: { CachorroCard },
   data() {
     return {
-      cachorros: [
-        {id: 1, nome: 'Reis 1'},
-        {id: 2, nome: 'Reis 2'},
-        {id: 3, nome: 'Reis 3'},
-        {id: 4, nome: 'Reis 4'},
-        {id: 5, nome: 'Reis 5'},
-      ]
-    }
-  }
-}
+      cachorros: [],
+    };
+  },
+  async created() {
+    const cachorros = await axios.get("http://191.52.55.161:8000/cachorros/");
+    this.cachorros = cachorros.data;
+  },
+};
 </script>
 <template>
-    <div class="card-group">
-      <CachorroCard v-for="cachorro in cachorros" :key="cachorro.id" :cachorro="cachorro" />
-    </div>
+  <div class="card-group">
+    <CachorroCard
+      v-for="cachorro in cachorros"
+      :key="cachorro.id"
+      :cachorro="cachorro"
+    />
+  </div>
 </template>
 
-<style>
-
-</style>
+<style></style>
