@@ -153,7 +153,7 @@ section.images {
   align-items: flex-end;
   justify-content: flex-end;
   z-index: 0;
-}<template>
+}
 
 section.images .circle {
   position: absolute;
