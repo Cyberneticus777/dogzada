@@ -36,8 +36,8 @@
       </div>
     </main>
     <section class="images">
-        <img src="@/assets/img/img-2.svg" alt="image" />
-        <div class="circle"></div>
+      <img src="@/assets/img/img-2.svg" alt="image" />
+      <div class="circle"></div>
     </section>
   </div>
 </template>
@@ -147,12 +147,13 @@ main {
 }
 
 section.images {
-   width: 100%;
-  margin-left: 0px; 
+  width: 100%;
+  margin-left: 0px;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end; 
-}
+  justify-content: flex-end;
+  z-index: 0;
+}<template>
 
 section.images .circle {
   position: absolute;
@@ -162,6 +163,6 @@ section.images .circle {
   left: 0;
   background: linear-gradient(45deg, #8a93e4, #00b7ff, #3071e7);
   clip-path: circle(70% at right 80%);
-  
+  z-index: -2;
 }
 </style>
