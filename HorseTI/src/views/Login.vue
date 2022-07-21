@@ -32,7 +32,9 @@
         <input type="Password" placeholder="Digite sua Senha" />
       </div>
       <div class="input-button">
+        <a href="/cachorrada">
         <input type="button" value="Entrar" />
+        </a>
       </div>
     </main>
     <section class="images">

@@ -14,12 +14,17 @@
         </div>
 
         <div class="input-buttons">
+          <a href="/cachorrada">
           <input type="button" value="Entrar" />
+          </a>
+          
+
         </div>
         <div class="alternative">
           <span> ou </span>
         </div>
         <div class="input-buttons">
+          <a href="/cadastro"></a>
           <input type="button" value="Cadastre-se" />
         </div>
       </div>
