@@ -10,11 +10,11 @@ export default {
       src="@/assets/img/guia_racas_golden_retriever_dogvibe.jpg"
       alt="gato"
     />
-    <h1>{{ cachorro.descricao }}</h1>
-    <span
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsam
-      ex dolor reiciendis iusto expedita ipsum maxime doloremque.
-    </span>
+    <h1>{{ cachorro.nome }}</h1>
+    <div class="descricao">
+    
+      {{ cachorro.descricao }}
+    </div>
 
     <div class="button">
       <button>clique aqui</button>
@@ -25,4 +25,10 @@ export default {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.descricao{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+}
+</style>

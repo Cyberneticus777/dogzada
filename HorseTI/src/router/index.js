@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import CachorrosView from "../views/CachorrosView.vue";
 import Login from "@/views/Login.vue";
 import SignInView from "@/views/SignInView.vue";
 
@@ -34,8 +35,7 @@ const router = createRouter({
         {
           path: "/cachorrada",
           name: "cachorros",
-
-          component: () => import("../views/CachorrosView.vue"),
+          component: CachorrosView,
         },
       ],
     },
