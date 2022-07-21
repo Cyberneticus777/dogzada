@@ -13,8 +13,12 @@ export default {
     this.cachorros = cachorros.data;
   },
 };
+
 </script>
 <template>
+
+
+
   <div class="card-group">
     <CachorroCard
       v-for="cachorro in cachorros"
